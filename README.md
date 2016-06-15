@@ -1,32 +1,10 @@
-# node-js-getting-started
+# Pumpkin Pi Hub
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+The website code running on heroku.  The node code is built out of the getting started app from heroku.  I downloaded a free bootstrap template for the initial layout and made modifications as nessessary.
+The image looping code was also taken from another developer's library and I made modifications to fit my needs....thanks to those developers.
+Accordingly, this code is free to use as well.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Documentation
 

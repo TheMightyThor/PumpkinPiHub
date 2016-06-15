@@ -31,7 +31,7 @@
 
         while (slideNumber < 3) {
             var slide = config.directory + images[slideNumber].name;
-            slides.push('<div><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img style="width:100%; col-lg-12" src=" ' + slide + '" /></div>');
+            slides.push('<div><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img style="width:95%; col-lg-12" src=" ' + slide + '" /></div>');
             slideNumber++;
         }
         slides.reverse();

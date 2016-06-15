@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="4" column="21759" selection-start-line="4" selection-start-column="21759" selection-end-line="4" selection-end-column="21759" />
+              <caret line="4" column="21791" selection-start-line="4" selection-start-column="21791" selection-end-line="4" selection-end-column="21791" />
               <folding />
             </state>
           </provider>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/package.json" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/app.js" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js" />
-        <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.css" />
+        <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css" />
       </list>
     </option>
   </component>
@@ -380,12 +380,12 @@
       <workItem from="1465607237743" duration="760000" />
       <workItem from="1465611228306" duration="37506000" />
       <workItem from="1465841233994" duration="7407000" />
-      <workItem from="1465915628121" duration="8482000" />
+      <workItem from="1465915628121" duration="8888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89430000" />
+    <option name="totallyTimeSpent" value="89836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-444" width="1920" height="1080" extended-state="0" />
@@ -805,18 +805,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="4" column="21759" selection-start-line="4" selection-start-column="21759" selection-end-line="4" selection-end-column="21759" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="1597" column="17" selection-start-line="1597" selection-start-column="17" selection-end-line="1597" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="4" column="21791" selection-start-line="4" selection-start-column="21791" selection-end-line="4" selection-end-column="21791" />
           <folding />
         </state>
       </provider>

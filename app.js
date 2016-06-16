@@ -41,7 +41,7 @@ app.post('/api/imageData', function (req, res) {
 app.get('/api/imageData', function (req, res) {
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
-    const date = new Date();
+    const date = new Date.UTC();
     client.query('SELECT name, createdate From Image WHERE createdate >=\' ' + date.toISOString().substring(0, 10) + '\'ORDER BY createdate ASC ;', function (err, result) {
 
         if (err) {

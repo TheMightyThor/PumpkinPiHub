@@ -10,19 +10,17 @@
         var config = $.extend({
             animation: 'slide',
             filebase: 'andrew',
-            speed: 1000,
-            timeout: 3000,
-            directory: 'https://s3.amazonaws.com/pumpkinpi/',
-            height: 768,
-            width: 1024
+            speed: 1500,
+            timeout: 3500,
+            directory: 'https://s3.amazonaws.com/pumpkinpi/'
         }, options || {});
 
-        if (config.height) {
-            $(elem).css('height', '768');
-        }
-        if (config.width) {
-            $(elem).css('max-width', 'auto');
-        }
+        // if (config.height) {
+        //     $(elem).css('height', '768');
+        // }
+        // if (config.width) {
+        //     $(elem).css('max-width', 'auto');
+        // }
         $(elem).css('display', 'block');
         $(elem).css('overflow', 'hidden');
 
@@ -31,13 +29,13 @@
 
         while (slideNumber < 3) {
             var slide = config.directory + images[slideNumber].name;
-            slides.push('<div><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img style="width:95%; col-lg-12" src=" ' + slide + '" /></div>');
+            slides.push('<div class="col-lg-12"><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img src=" ' + slide + '" /></div>');
             slideNumber++;
         }
         slides.reverse();
 
         var slideWrap = $('<div class="' + elemId + '-slide-wrap col-lg-12" ></div>');
-        slideWrap.appendTo(elem);
+        slideWrap.appendTo(elem);i
 
         $.each(slides, function (index, val) {
             $(val).css({
@@ -47,14 +45,15 @@
         });
         var index = 2;
         setInterval(function () {
+
             var firstSlide = elem.find('div:first-child')[1],
                 middleSlide = elem.find('div:nth-child(1)'),
                 lastSlide = elem.find('div:last-child')[1];
+            $(firstSlide).children('h2').css('visibility', 'hidden');
             $(lastSlide).animate({
                     opacity: 0
                 },
                 config.speed, function () {
-                    $(firstSlide).children('h2').css('visibility', 'hidden');
                     $(this).children('h2').css('visibility', 'visible');
                     $(this).insertBefore(firstSlide).css({
                         opacity: 1,

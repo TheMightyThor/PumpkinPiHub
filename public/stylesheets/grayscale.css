@@ -17,6 +17,8 @@ html {
     height: 100%;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -167,11 +169,24 @@ a:focus {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+@media(min-width:1200px){
+    .directorySlider{
+        height: 1200px;
+    }
+}
+@media(max-width:767px){
+    .directorySlider{
+        height:600px;
+    }
+}
 
 @media(min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
+    }
+    .directorySlider{
+        height: 900px;
     }
 
     .intro .intro-body .brand-heading {
@@ -222,7 +237,9 @@ a:focus {
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
 }
-
+.container{
+    width:95%;
+}
 @-webkit-keyframes pulse {    
     0% {
         -webkit-transform: scale(1);
@@ -359,6 +376,9 @@ footer p {
 
 img::selection {
     background: 0 0;
+}
+img{
+    width:95%;
 }
 
 img::-moz-selection {

@@ -6,6 +6,7 @@ var express = require('express')
 var app = express();
 
 var pg = require('pg');
+var now = new Date();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -41,14 +42,31 @@ app.post('/api/imageData', function (req, res) {
 app.get('/api/imageData', function (req, res) {
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
-    const now = new Date();
+
     client.query('SELECT name, createdate From Image WHERE createdate >=\' ' + now.toISOString().substring(0, 10) + '\'ORDER BY createdate ASC ;', function (err, result) {
 
         if (err) {
             res.send('Something bad happend' + err);
         }
         else {
-            res.send(JSON.stringify(result.rows));
+            if(result.rows.length > 0) {
+                res.send(JSON.stringify(result.rows));
+            }
+            else {
+                now.setDate(now.getDate() - 1);
+                client.query('SELECT name, createdate From Image WHERE createdate >=\' ' + now.toISOString().substring(0, 10) + '\'ORDER BY createdate ASC ;', function (err, result) {
+                    if (err) {
+                        res.send('Something bad happend' + err);
+                        now = new Date();
+                    }
+                    else {
+                        if (result.rows.length > 0) {
+                            res.send(JSON.stringify(result.rows));
+                            now = new Date();
+                        }
+                    }
+                });
+            }
         }
     });
 });

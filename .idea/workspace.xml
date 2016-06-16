@@ -24,8 +24,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="300">
+              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
       <file leaf-file-name="slideshow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="217">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
               <folding>
-                <marker date="1466024616000" expanded="true" signature="942:961" ph="..." />
+                <marker date="1466044477000" expanded="true" signature="942:961" ph="..." />
               </folding>
             </state>
           </provider>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/views/pages/index.ejs" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/stylesheets/grayscale.css" />
-        <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/README.md" />
+        <option value="$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js" />
         <option value="$PROJECT_DIR$/../pumpkin-pi-hub/app.js" />
       </list>
     </option>
@@ -416,12 +416,12 @@
       <workItem from="1465607237743" duration="760000" />
       <workItem from="1465611228306" duration="37506000" />
       <workItem from="1465841233994" duration="7407000" />
-      <workItem from="1465915628121" duration="16204000" />
+      <workItem from="1465915628121" duration="16789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97152000" />
+    <option name="totallyTimeSpent" value="97737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1076" extended-state="0" />
@@ -465,12 +465,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js</url>
-          <line>44</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -496,7 +520,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466024616000" expanded="true" signature="942:961" ph="..." />
+            <marker date="1466044477000" expanded="true" signature="942:961" ph="..." />
           </folding>
         </state>
       </provider>
@@ -845,16 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <marker date="1466024616000" expanded="true" signature="942:961" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -863,10 +877,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/public/js/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <marker date="1466044477000" expanded="true" signature="942:961" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../pumpkin-pi-hub/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding />
         </state>
       </provider>

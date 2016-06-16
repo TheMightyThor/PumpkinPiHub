@@ -35,7 +35,7 @@
         slides.reverse();
 
         var slideWrap = $('<div class="' + elemId + '-slide-wrap col-lg-12" ></div>');
-        slideWrap.appendTo(elem);i
+        slideWrap.appendTo(elem);
 
         $.each(slides, function (index, val) {
             $(val).css({

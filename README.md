@@ -4,14 +4,10 @@ The website code running on heroku [PumpkinPiHub](htttp://www.pumpkinpihub.club)
 The image looping code was also taken from another developer's library and I made modifications to fit my needs....thanks to those developers.
 Accordingly, this code is free to use as well.
 
-
+The Raspberry Pi code (Python) used to take photos and upload them to aws can be found [here](https://github.com/TheMightyThor/PumpkinPi).
 
 ## Documentation
 
 For more information about using Node.js on Heroku, see these Dev Center articles:
 
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)

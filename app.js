@@ -26,6 +26,9 @@ app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
 });
 app.post('/api/imageData', function (req, res) {
+    console.log(req.headers);
+    if(process.env.xyz !== req.headers.xyz)
+        res.end();
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
     const insertStatement = 'INSERT INTO Image (name,createdate) VALUES (\'' + req.query.name + '\', localtimestamp) RETURNING * ;';
@@ -40,6 +43,7 @@ app.post('/api/imageData', function (req, res) {
     });
 });
 app.get('/api/imageData', function (req, res) {
+
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
 

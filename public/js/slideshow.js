@@ -12,7 +12,7 @@
             filebase: 'andrew',
             speed: 1500,
             timeout: 3500,
-            directory: 'https://s3.amazonaws.com/pumpkinpi/'
+            directory: 'https://s3.amazonaws.com/pumpkinpihub/'
         }, options || {});
 
         // if (config.height) {

@@ -38,7 +38,7 @@ app.post('/api/imageData', function (req, res) {
             res.end('ERROR ' + err);
         }
         else {
-            res.send({results: result.rows});
+            res.send({results: result.rows, extraInfo: process.env.xyz});
         }
     });
 });

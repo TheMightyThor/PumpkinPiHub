@@ -52,6 +52,7 @@ app.get('/api/imageData', function (req, res) {
         if (err) {
             res.send('Something bad happend' + err);
         }
+            
         else {
             if(result.rows.length > 0) {
                 res.send(JSON.stringify(result.rows));

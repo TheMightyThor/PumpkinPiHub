@@ -27,8 +27,8 @@ app.listen(app.get('port'), function () {
 });
 app.post('/api/imageData', function (req, res) {
     console.log(req.headers);
-    if(process.env.xyz !== req.headers.xyz)
-        res.end();
+    // if(process.env.xyz !== req.headers.xyz)
+    //     res.end();
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
     const insertStatement = 'INSERT INTO Image (name,createdate) VALUES (\'' + req.query.name + '\', localtimestamp) RETURNING * ;';

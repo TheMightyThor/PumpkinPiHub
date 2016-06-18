@@ -31,7 +31,7 @@ app.post('/api/imageData', function (req, res) {
     //     res.end();
     var client = new pg.Client(process.env.DATABASE_URL);
     client.connect();
-    const insertStatement = 'INSERT INTO Image (name,createdate) VALUES (\'' + req.query.name + '\', localtimestamp) RETURNING * ;';
+    const insertStatement = 'INSERT INTO Image (name,createdate, numba) VALUES (\'' + req.query.name + '\', localtimestamp, ' + req.query.numba +') RETURNING * ;';
     client.query(insertStatement, function (err, result) {
 
         if (err) {
@@ -52,7 +52,7 @@ app.get('/api/imageData', function (req, res) {
         if (err) {
             res.send('Something bad happend' + err);
         }
-            
+
         else {
             if(result.rows.length > 0) {
                 res.send(JSON.stringify(result.rows));

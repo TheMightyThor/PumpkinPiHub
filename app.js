@@ -48,7 +48,7 @@ app.get('/api/imageData', function (req, res) {
     client.connect();
 
     //client.query('SELECT name, createdate From Image WHERE createdate >=\' ' + now.toISOString().substring(0, 10) + '\'ORDER BY createdate ASC ;', function (err, result) {
-    client.query('SELECT name, createdate From Image ORDER BY createdate ASC LIMIT 8 ;', function (err, result) {
+    client.query('SELECT name, createdate From Image ORDER BY createdate DESC LIMIT 8 ;', function (err, result) {
         if (err) {
             res.send('Something bad happend' + err);
         }

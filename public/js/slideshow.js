@@ -50,8 +50,8 @@
                 middleSlide = elem.find('div:nth-child(1)'),
                 lastSlide = elem.find('div:last-child')[1];
 
-                $(middleSlide).children('h2').css('visibility', 'hidden');
-                $(firstSlide).children('h2').css('visibility', 'visible');
+                $(middleSlide).children('h2').css('visibility', 'visible');
+                $(firstSlide).children('h2').css('visibility', 'hidden');
 
             $(lastSlide).animate({
                     opacity: 0

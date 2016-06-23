@@ -54,9 +54,9 @@
                     opacity: 0
                 },
                 config.speed, function () {
-                    $(this).children('h2').css('visibility', 'hidden');
+                    $(this).children('h2').css('visibility', 'visible');
                     $(middleSlide).children('h2').css('visibility', 'hidden');
-                    $(firstSlide).children('h2').css('visibility', 'visible');
+                    $(firstSlide).children('h2').css('visibility', 'hidden');
                     $(this).insertBefore(firstSlide).css({
                         opacity: 1,
                         position: 'absolute'

@@ -11,7 +11,7 @@
             animation: 'slide',
             filebase: 'andrew',
             speed: 1500,
-            timeout: 3500,
+            timeout: 4000,
             directory: 'https://s3.amazonaws.com/pumpkinpihub/'
         }, options || {});
 
@@ -54,8 +54,9 @@
                     opacity: 0
                 },
                 config.speed, function () {
-                    $(this).children('h2').css('visibility', 'visible');
-                    $(firstSlide).children('h2').css('visibility', 'hidden');
+                    $(this).children('h2').css('visibility', 'hidden');
+                    $(middleSlide).children('h2').css('visibility', 'hidden');
+                    $(firstSlide).children('h2').css('visibility', 'visible');
                     $(this).insertBefore(firstSlide).css({
                         opacity: 1,
                         position: 'absolute'

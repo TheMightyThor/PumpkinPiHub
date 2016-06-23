@@ -51,13 +51,13 @@
                 lastSlide = elem.find('div:last-child')[1];
 
                 $(middleSlide).children('h2').css('visibility', 'hidden');
-                $(firstSlide).children('h2').css('visibility', 'hidden');
+                $(firstSlide).children('h2').css('visibility', 'visible');
 
             $(lastSlide).animate({
                     opacity: 0
                 },
                 config.speed, function () {
-                    $(this).children('h2').css('visibility', 'visible');
+                    $(this).children('h2').css('visibility', 'hidden');
 
                     $(this).insertBefore(firstSlide).css({
                         opacity: 1,

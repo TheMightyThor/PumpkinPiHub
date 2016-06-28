@@ -56,7 +56,16 @@
 
     <section id="about" class="container content-section text-center">
 
-
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">8:00 am</a></li>
+                <li><a href="#">11:00 am</a></li>
+                <li><a href="#">2:00 pm</a></li>
+                <li><a href="#">5:00 pm</a></li>
+            </ul>
+        </div>
         <div class="directorySlider" id="slideshow"></div>
     </section>
 
@@ -108,12 +117,14 @@
 
 </body>
 <script>
-    $(document).ready(function($http) {
-        $.get('/api/imageData', function(data){
-            imageNames = data;
-            $('#slideshow').directorySlider(null,imageNames);
+
+
+        $(document).ready(function ($http) {
+            getImageData($http);
         });
-    });
+
+
+
 </script>
 
 <script src="/js/jquery.js"></script>

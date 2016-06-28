@@ -94,3 +94,16 @@
         });
     };
 })(jQuery);
+
+var time = '11:00 am';
+
+$('.dropdown-menu li > a').click(function(e){
+    time = $(this).text();
+    getImageData(time);
+});
+function getImageData(time) {
+    $.get('/api/imageData?time=' + time, function (data) {
+        imageNames = data;
+        $('#slideshow').directorySlider(null, imageNames);
+    });
+};

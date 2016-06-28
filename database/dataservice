@@ -1,0 +1,19 @@
+var express = require('express');
+const router = express.Router();
+    var query =function () {
+        var client = new pg.Client(process.env.DATABASE_URL);
+        client.connect();
+        const insertStatement = 'Select * from ;';
+        // client.query(insertStatement, function (err, result) {
+        //
+        //     if (err) {
+        //         res.end('ERROR ' + err);
+        //     }
+        //     else {
+        //         res.send({results: result.rows, extraInfo: process.env.xyz});
+        //     }
+        //});
+        return 'got it';
+    };
+
+    export default router;

@@ -51,8 +51,6 @@
                 lastSlide = elem.find('div:last-child')[1];
 
                 $(middleSlide).children('h2').css('visibility', 'hidden');
-                $(firstSlide).children('h2').css('visibility', 'hidden');
-
             $(lastSlide).animate({
                     opacity: 0
                 },
@@ -105,7 +103,6 @@ $('.dropdown-menu li > a').click(function(e){
 });
 function getImageData(time) {
     $.get('/api/imageData?time=' + time, function (data) {
-        imageNames = data;
-        $('#slideshow').directorySlider(null, imageNames);
+        $('#slideshow').directorySlider(null, data);
     });
 };

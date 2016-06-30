@@ -29,7 +29,7 @@
 
         while (slideNumber < 3) {
             var slide = config.directory + images[slideNumber].name;
-            slides.push('<div class="col-lg-12"><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img src=" ' + slide + '" /></div>');
+            slides.push('<div class="col-lg-12"><h2 style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '').substr(8, this.length) + '</h2><img src=" ' + slide + '" /></div>');
             slideNumber++;
         }
         slides.reverse();
@@ -97,9 +97,11 @@
 
 var time = '11:00 am';
 
+
 $('.dropdown-menu li > a').click(function(e){
     time = $(this).text();
     getImageData(time);
+    $('#time').text(time);
 });
 function getImageData(time) {
     $.get('/api/imageData?time=' + time, function (data) {

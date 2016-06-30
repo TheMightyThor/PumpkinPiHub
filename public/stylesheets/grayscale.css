@@ -316,6 +316,7 @@ a:focus {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    background : rgba(255,255,255,.2);
 }
 
 .btn-default {
@@ -331,7 +332,15 @@ a:focus {
     color: #000;
     background-color: #42dca3;
 }
+.btn-primary{
+    border-color : rgba(255,255,255,.2);
+    background-color : rgba(255,255,255,.2);
+}
 
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    order-color : rgba(255,255,255,.2);
+    background-color : rgba(255,255,255,.2);
+}
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -387,4 +396,7 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+#time{
+    padding: .5em;
 }

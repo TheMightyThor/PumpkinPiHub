@@ -12,7 +12,8 @@
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/grayscale.css" rel="stylesheet">
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
@@ -28,7 +29,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <i class="fa fa-camera-retro" aria-hidden="true"></i>  <span class="light"></span> Pumpkin Pi Hub
+                <i class="fa fa-camera-retro" aria-hidden="true"></i> <span class="light"></span> Pumpkin Pi Hub
             </a>
         </div>
 
@@ -42,7 +43,7 @@
                     <a class="page-scroll" href="#about">About</a>
                 </li>
                 <!--<li>-->
-                    <!--<a class="page-scroll" href="#download">Download</a>-->
+                <!--<a class="page-scroll" href="#download">Download</a>-->
                 <!--</li>-->
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -54,76 +55,80 @@
 
 </nav>
 
-    <section id="about" class="container content-section text-center">
+<section id="about" class="container content-section text-center">
 
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">8:00 am</a></li>
-                <li><a href="#">11:00 am</a></li>
-                <li><a href="#">2:00 pm</a></li>
-                <li><a href="#">5:00 pm</a></li>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="left:45%;">
+            <li><a href="#">8:00 am</a></li>
+            <li><a href="#">11:00 am</a></li>
+            <li><a href="#">2:00 pm</a></li>
+            <li><a href="#">5:00 pm</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3 id="time"></h3>
+    </div>
+    <div class="directorySlider" id="slideshow"></div>
+</section>
+
+<!-- Download Section -->
+<!--<section id="download" class="content-section text-center">-->
+<!--<div class="download-section">-->
+<!--<div class="container">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<h2>Download Grayscale</h2>-->
+<!--<p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>-->
+<!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+</section>
+
+<section id="contact" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Contact Pumpkin Pi Hub</h2>
+            <p>Watching Giant Pumpkins Grow Since 2014</p>
+            <p><a href="mailto:andrewtheobald43@gmailcom">feedback@pumpkinpi.com</a>
+            </p>
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
+                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
+                                class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
+                                class="fa fa-facebook fa-fw"></i> <span class="network-name">facebook</span></a>
+                </li>
             </ul>
         </div>
-        <div class="directorySlider" id="slideshow"></div>
-    </section>
+    </div>
+</section>
 
-    <!-- Download Section -->
-    <!--<section id="download" class="content-section text-center">-->
-        <!--<div class="download-section">-->
-            <!--<div class="container">-->
-                <!--<div class="col-lg-8 col-lg-offset-2">-->
-                    <!--<h2>Download Grayscale</h2>-->
-                    <!--<p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>-->
-                    <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    </section>
+<div id="map"></div>
 
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Pumpkin Pi Hub</h2>
-                <p>Watching Giant Pumpkins Grow Since 2014</p>
-                <p><a href="mailto:andrewtheobald43@gmailcom">feedback@pumpkinpi.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">facebook</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <div id="map"></div>
-
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Pumpkin Pi Hub 2016</p>
-        </div>
-    </footer>
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Pumpkin Pi Hub 2016</p>
+    </div>
+</footer>
 
 </body>
 <script>
 
-
-        $(document).ready(function ($http) {
-            getImageData($http);
-        });
-
-
+    $(document).ready(function ($http) {
+        getImageData($http);
+    });
 
 </script>
 
@@ -131,7 +136,8 @@
 <script src="/js/slideshow.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 <script src="/js/grayscale.js"></script>
 
 </html>

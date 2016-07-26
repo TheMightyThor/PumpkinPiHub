@@ -9,18 +9,11 @@
 
         var config = $.extend({
             animation: 'slide',
-            filebase: 'andrew',
             speed: 1500,
             timeout: 4000,
             directory: 'https://s3.amazonaws.com/pumpkinpihub/'
         }, options || {});
 
-        // if (config.height) {
-        //     $(elem).css('height', '768');
-        // }
-        // if (config.width) {
-        //     $(elem).css('max-width', 'auto');
-        // }
         $(elem).css('display', 'block');
         $(elem).css('overflow', 'hidden');
 

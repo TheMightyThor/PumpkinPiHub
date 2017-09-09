@@ -32,6 +32,8 @@
             var slide = config.directory + images[slideNumber].name;
             slides.push('<div class="col-lg-12 center-block"><h2 class="center-block" style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '').substr(9, this.length) + '</h2><img src=" ' + slide + '" /></div>');
             slideNumber++;
+          } else {
+            break;
           }
         }
         slides.reverse();

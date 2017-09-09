@@ -74,7 +74,7 @@ app.get('/api/imageData', function (req, res) {
             }
             else {
                 now.setDate(now.getDate() - 1);
-                client.query('SELECT name, createdate From Image WHERE numba = '+ numba +' ORDER BY createdate ASC ;', function (err, result) {
+                client.query('SELECT name, createdate From Image ORDER BY createdate ASC ;', function (err, result) {
                     if (err) {
                         res.send('Something bad happend' + err);
                         now = new Date();

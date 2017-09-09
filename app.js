@@ -45,7 +45,7 @@ app.post('/api/imageData', function (req, res) {
 });
 app.get('/api/imageData', function (req, res) {
 
-    var  numba = 2;
+    var  numba = 3;
     if(req.query.time){
         switch(req.query.time){
             case '8:00 am':

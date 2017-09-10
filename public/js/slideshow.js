@@ -2,7 +2,6 @@
     var directorySlider = function (element, options, imageNames) {
 
         var images = JSON.parse(imageNames);
-        var date = [];
         var elem = $(element),
             obj = this,
             elemId = elem[0].id;
@@ -17,10 +16,6 @@
 
         $(elem).css('display', 'block');
         $(elem).css('overflow', 'hidden');
-
-        images.forEach(function(item){
-          date.push(item.name.replace('.jpg',''));
-        })
 
         var slides = [],
             slideNumber = 0;
@@ -70,8 +65,8 @@
                     if (index >= images.length)
                         index = 0;
 
-                    firstSlide.childNodes[0].childNodes[0].data == date[index];
-                   firstSlide.childNodes[1].src = config.directory + images[index].name;
+                    var h2 = firstSlide.childNodes[0].childNodes[0].data = images[index].name.replace('.jpg', '');
+                    var img = firstSlide.childNodes[1].src = config.directory + images[index].name;
 
                     index++;
                 });

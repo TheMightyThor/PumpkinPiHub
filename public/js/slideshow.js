@@ -70,8 +70,7 @@
                     if (index >= images.length)
                         index = 0;
 
-                    var h2 = firstSlide.childNodes[0].childNodes[0].data == index > 0 ?
-                      images[index - 1].name.replace('.jpg', '') : images[index].name.replace('.jpg','');
+                    var h2 = firstSlide.childNodes[0].childNodes[0].data = images[index].name.replace('.jpg', '');
                     var img = firstSlide.childNodes[1].src = config.directory + images[index].name;
 
                     index++;

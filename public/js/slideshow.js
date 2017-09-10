@@ -70,8 +70,8 @@
                     if (index >= images.length)
                         index = 0;
 
-                    firstSlide.childNodes[0].childNodes[0].data == index+1 < date.length ? date[index +1] : date[index];
-                    firstSlide.childNodes[1].src = config.directory + images[index].name;
+                    firstSlide.childNodes[0].childNodes[0].data == date[index];
+                   firstSlide.childNodes[1].src = config.directory + images[index].name;
 
                     index++;
                 });

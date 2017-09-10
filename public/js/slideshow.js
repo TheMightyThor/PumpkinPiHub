@@ -70,7 +70,7 @@
                     if (index >= images.length)
                         index = 0;
 
-                    var h2 = date[index];
+                    var h2 = firstSlide.childNodes[0].childNodes[0].data = date[index];
                     var img = firstSlide.childNodes[1].src = config.directory + images[index].name;
 
                     index++;

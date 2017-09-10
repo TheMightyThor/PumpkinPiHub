@@ -18,7 +18,7 @@
         $(elem).css('display', 'block');
         $(elem).css('overflow', 'hidden');
 
-        images.foreach(function(item){
+        images.forEach(function(item){
           date.push(item.name.replace('.jpg',''));
         })
 

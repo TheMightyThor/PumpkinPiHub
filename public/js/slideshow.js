@@ -2,7 +2,7 @@
     var directorySlider = function (element, options, imageNames) {
 
         var images = JSON.parse(imageNames);
-
+        var date = [];
         var elem = $(element),
             obj = this,
             elemId = elem[0].id;
@@ -15,14 +15,12 @@
             directory: 'https://s3.amazonaws.com/pumpkinpihub/'
         }, options || {});
 
-        // if (config.height) {
-        //     $(elem).css('height', '768');
-        // }
-        // if (config.width) {
-        //     $(elem).css('max-width', 'auto');
-        // }
         $(elem).css('display', 'block');
         $(elem).css('overflow', 'hidden');
+
+        images.foreach(function(item){
+          date.push(item.name.replace('.jpg',''));
+        })
 
         var slides = [],
             slideNumber = 0;
@@ -30,7 +28,9 @@
         while (slideNumber < 3) {
           if(images[slideNumber] != null){
             var slide = config.directory + images[slideNumber].name;
-            slides.push('<div class="col-lg-12 center-block"><h2 class="center-block" style="visibility: hidden;">' + images[slideNumber].name.replace('.jpg', '') + '</h2><img src=" ' + slide + '" /></div>');
+            slides.push('<div class="col-lg-12 center-block"><h2 class="center-block" style="visibility: hidden;">' +
+              images[slideNumber].name.replace('.jpg', '') +
+              '</h2><img src=" ' + slide + '" /></div>');
             slideNumber++;
           } else {
             break;
@@ -70,7 +70,7 @@
                     if (index >= images.length)
                         index = 0;
 
-                    var h2 = firstSlide.childNodes[1].childNodes[0].data = images[index].name.replace('.jpg', '');
+                    var h2 = date[index];
                     var img = firstSlide.childNodes[1].src = config.directory + images[index].name;
 
                     index++;
